@@ -1,117 +1,81 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#f7f8f7] text-[#1f2d44]">
-      <section className="bg-[#1f2d44] text-white">
-        <div className="mx-auto max-w-7xl px-6 py-24 md:py-32 grid gap-16 md:grid-cols-2 items-center">
+    <main className="bg-[#f4f0e8] text-[#111827] min-h-screen overflow-hidden">
+      <nav className="border-b border-black/10 bg-[#f4f0e8] sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
           <div>
-            <p className="text-sm uppercase tracking-[0.25em] text-[#19b89f] font-bold mb-6">
-              Leadership • DISC • Team Performance
-            </p>
-            <h1 className="text-5xl md:text-7xl font-bold leading-[1.02] tracking-tight mb-6">
-              Figure Out Your Team.
-            </h1>
-            <p className="text-2xl md:text-3xl text-white/85 font-medium leading-tight max-w-2xl">
-              Use behavioural science to put the right people in the right seats, strengthen communication, and fix your chronic people problems.
-            </p>
-            <div className="mt-10 flex flex-wrap gap-4">
-              <a href="#" className="rounded-full bg-[#ff7a00] px-6 py-4 font-semibold hover:opacity-90 transition">
-                Take the DISC Assessment
-              </a>
-              <a href="#" className="rounded-full border border-white/20 px-6 py-4 font-semibold hover:bg-white/10 transition">
-                Explore the Book
-              </a>
+            <div className="text-2xl font-black tracking-tight">TREVOR THRONESS</div>
+            <div className="text-xs uppercase tracking-[0.3em] text-[#8a6a2f] font-semibold">
+              Figure Out Your Team
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-white/10 bg-white/10 backdrop-blur p-6 shadow-2xl">
-            <div className="rounded-[1.5rem] bg-gradient-to-br from-[#32435f] to-[#172235] p-10 aspect-[4/5] flex flex-col justify-between">
-              <div>
-                <div className="inline-block rounded-full bg-[#ff7a00] px-4 py-2 text-xs font-bold uppercase tracking-widest mb-8">
-                  New Book
-                </div>
-                <h2 className="text-5xl font-black leading-none tracking-tight">
-                  FIGURE
-                  <br />
-                  OUT
-                  <br />
-                  YOUR
-                  <br />
-                  TEAM
-                </h2>
-              </div>
-              <p className="text-white/70 leading-7 max-w-sm">
-                Practical leadership tools for building aligned, healthy, high-performing teams.
-              </p>
-            </div>
+          <div className="hidden md:flex items-center gap-8 text-sm font-medium">
+            <a href="#">About</a>
+            <a href="#">DISC</a>
+            <a href="#">Resources</a>
+            <a href="#">Book</a>
           </div>
+
+          <a
+            href="#"
+            className="rounded-full bg-[#122033] text-white px-5 py-3 text-sm font-bold"
+          >
+            Take The DISC Assessment
+          </a>
         </div>
-      </section>
+      </nav>
 
-      <section className="bg-white py-24">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="max-w-3xl mb-14">
-            <p className="text-sm uppercase tracking-[0.25em] text-[#007B83] font-bold mb-5">
-              Why Teams Struggle
-            </p>
-            <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-              Most business problems are actually people problems.
-            </h2>
-            <p className="text-lg leading-8 text-[#1f2d44]/70">
-              Trevor helps leaders understand behaviour, communication, accountability, and culture so teams stop working against each other and start moving in the same direction.
-            </p>
-          </div>
+      <section className="max-w-7xl mx-auto px-6 py-24 md:py-32 grid lg:grid-cols-2 gap-20 items-center">
+        <div>
+          <p className="uppercase tracking-[0.3em] text-[#8a6a2f] text-sm font-bold mb-6">
+            Behavioural Science • Leadership • Team Alignment
+          </p>
 
-          <div className="grid gap-6 md:grid-cols-3">
-            <div className="rounded-3xl border border-[#1f2d44]/10 p-8 bg-[#f7f8f7]">
-              <div className="text-[#ff7a00] font-bold mb-4">01</div>
-              <h3 className="text-2xl font-bold mb-4">Right People</h3>
-              <p className="leading-7 text-[#1f2d44]/70">
-                Understand behavioural patterns and put people where they naturally thrive.
-              </p>
-            </div>
+          <h1 className="text-6xl md:text-8xl leading-[0.95] tracking-tight font-light mb-8">
+            Stronger teams.
+            <br />
+            Better leaders.
+            <br />
+            <span className="italic text-[#8a6a2f]">Real results.</span>
+          </h1>
 
-            <div className="rounded-3xl border border-[#1f2d44]/10 p-8 bg-[#f7f8f7]">
-              <div className="text-[#ff7a00] font-bold mb-4">02</div>
-              <h3 className="text-2xl font-bold mb-4">Better Communication</h3>
-              <p className="leading-7 text-[#1f2d44]/70">
-                Create shared language around conflict, stress, motivation, and teamwork.
-              </p>
-            </div>
+          <p className="text-xl leading-9 text-black/70 max-w-2xl mb-10">
+            Trevor Throness helps leaders use DISC behavioural science to put the right people in the right seats, strengthen communication, and solve chronic people problems.
+          </p>
 
-            <div className="rounded-3xl border border-[#1f2d44]/10 p-8 bg-[#f7f8f7]">
-              <div className="text-[#ff7a00] font-bold mb-4">03</div>
-              <h3 className="text-2xl font-bold mb-4">Stronger Culture</h3>
-              <p className="leading-7 text-[#1f2d44]/70">
-                Align your leadership team and build accountability that actually lasts.
-              </p>
-            </div>
-          </div>
+          <a
+            href="#"
+            className="inline-flex bg-[#122033] text-white px-8 py-5 rounded-full font-semibold text-lg"
+          >
+            Take The DISC Assessment
+          </a>
         </div>
-      </section>
 
-      <section className="bg-[#1f2d44] text-white py-24">
-        <div className="mx-auto max-w-7xl px-6 grid gap-16 md:grid-cols-2 items-center">
+        <div className="aspect-[4/5] rounded-[2rem] bg-gradient-to-br from-[#122033] to-[#08111d] p-10 shadow-2xl flex flex-col justify-between text-white">
           <div>
-            <p className="text-sm uppercase tracking-[0.25em] text-[#19b89f] font-bold mb-5">
-              DISC Assessment
-            </p>
-            <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-              Understand how your team naturally communicates, leads, and responds under pressure.
+            <div className="inline-flex bg-[#b8862f] px-4 py-2 rounded-full text-xs uppercase tracking-widest font-bold mb-8">
+              New Book
+            </div>
+
+            <h2 className="text-6xl leading-[0.9] tracking-tight font-black">
+              FIGURE
+              <br />
+              OUT
+              <br />
+              YOUR
+              <br />
+              TEAM
             </h2>
-            <p className="text-lg leading-8 text-white/70 mb-8">
-              DISC gives leaders a practical framework for communication, delegation, hiring, coaching, and team alignment.
-            </p>
-            <a href="#" className="rounded-full bg-[#ff7a00] px-6 py-4 inline-block font-semibold hover:opacity-90 transition">
-              Take the Assessment
-            </a>
           </div>
 
-          <div className="grid gap-4">
-            {['Dominance','Influence','Steadiness','Conscientiousness'].map((item) => (
-              <div key={item} className="rounded-2xl border border-white/10 bg-white/5 p-6 text-xl font-semibold">
-                {item}
-              </div>
-            ))}
+          <div className="bg-white text-black p-6 rounded-2xl max-w-sm shadow-xl">
+            <p className="text-sm uppercase tracking-[0.2em] text-[#8a6a2f] font-bold mb-3">
+              Trevor Throness
+            </p>
+            <p className="text-lg leading-8 text-black/70">
+              Use behavioural science to strengthen communication, align teams, and improve leadership.
+            </p>
           </div>
         </div>
       </section>
