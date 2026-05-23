@@ -82,6 +82,67 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="bg-[#08111d] text-white py-24">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20">
+          <div>
+            <p className="uppercase tracking-[0.3em] text-[#b8862f] text-sm font-bold mb-6">
+              The Problem
+            </p>
+
+            <h2 className="text-5xl md:text-6xl leading-tight font-light mb-8">
+              Most business problems are actually people problems.
+            </h2>
+
+            <p className="text-xl leading-9 text-white/70">
+              Miscommunication. Conflict. Turnover. Missed expectations. Most leaders do not have a strategy problem. They have a people problem.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 gap-6">
+            {[
+              ['Build Stronger Teams', 'Create alignment and healthier communication.'],
+              ['Lead With Confidence', 'Understand how people naturally think and respond.'],
+              ['Fix Chronic Problems', 'Solve recurring people issues at the root.'],
+              ['Get Better Results', 'Stronger culture. Better decisions. More growth.'],
+            ].map(([title, desc]) => (
+              <div key={title} className="border border-white/10 rounded-3xl p-8 bg-white/5">
+                <h3 className="text-2xl font-semibold mb-4">{title}</h3>
+                <p className="text-white/70 leading-8">{desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="book" className="py-24 bg-[#f4f0e8]">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
+          <div>
+            <p className="uppercase tracking-[0.3em] text-[#8a6a2f] text-sm font-bold mb-6">
+              Featured Book
+            </p>
+
+            <h2 className="text-5xl md:text-6xl leading-tight font-light mb-8">
+              Figure Out Your Team.
+            </h2>
+
+            <p className="text-xl leading-9 text-black/70 mb-8">
+              Practical behavioural science for leaders who want healthier teams, stronger communication, and better results.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-3 gap-6">
+            {['Power of People Skills', 'Figure Out Your Team', 'DISC Leadership'].map((book) => (
+              <div key={book} className="aspect-[2/3] rounded-2xl bg-[#122033] text-white p-5 flex items-end shadow-2xl">
+                <div>
+                  <p className="text-xs uppercase tracking-[0.2em] text-[#b8862f] mb-3">Trevor Throness</p>
+                  <h3 className="text-2xl leading-tight font-bold">{book}</h3>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </main>
   )
 }
