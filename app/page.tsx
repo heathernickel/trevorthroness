@@ -1,101 +1,108 @@
 export default function Home() {
   return (
-    <main className="bg-[#f4f0e8] text-[#111827] min-h-screen overflow-hidden">
-      <nav className="border-b border-black/10 bg-[#f4f0e8] sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+    <main className="bg-[#f3efe7] text-[#111111] min-h-screen overflow-hidden">
+      <nav className="border-b border-black/10 bg-[#f3efe7] sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-8 py-6 flex items-center justify-between">
           <div>
-            <div className="text-2xl font-black tracking-tight">TREVOR THRONESS</div>
-            <div className="text-xs uppercase tracking-[0.3em] text-[#8a6a2f] font-semibold">
-              FIGURE OUT YOUR TEAM
+            <div className="text-2xl tracking-tight font-semibold">Trevor Throness</div>
+            <div className="uppercase tracking-[0.35em] text-[10px] mt-1 text-[#8f6a2a] font-semibold">
+              Figure Out Your Team
             </div>
           </div>
 
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium uppercase tracking-wide">
+          <div className="hidden lg:flex items-center gap-10 text-sm uppercase tracking-wide text-black/70">
             <a href="#about">About</a>
             <a href="#disc">DISC</a>
             <a href="#resources">Resources</a>
+            <a href="#book">Book</a>
             <a href="#speaking">Speaking</a>
-            <a href="#blog">Blog</a>
           </div>
 
-          <a href="#cta" className="bg-[#08111d] text-white px-6 py-4 text-sm font-bold uppercase tracking-wide">
-            Get The DISC Assessment →
+          <a
+            href="#cta"
+            className="bg-[#111827] text-white px-6 py-4 text-sm uppercase tracking-wide font-semibold hover:opacity-90 transition"
+          >
+            Take The DISC Assessment
           </a>
         </div>
       </nav>
 
-      <section className="grid lg:grid-cols-2 min-h-[85vh] border-b border-black/10">
-        <div className="px-8 md:px-16 py-20 flex flex-col justify-center bg-[#f4f0e8]">
-          <p className="uppercase tracking-[0.35em] text-[#b8862f] text-sm font-bold mb-10">
+      <section className="max-w-[1600px] mx-auto grid lg:grid-cols-[1.05fr_0.95fr] min-h-[92vh] border-b border-black/10">
+        <div className="px-8 md:px-16 xl:px-24 py-24 flex flex-col justify-center">
+          <p className="uppercase tracking-[0.45em] text-[#8f6a2a] text-xs font-bold mb-10">
             GET THE CLARITY EVERY LEADER NEEDS TO
           </p>
 
-          <h1 className="text-[5rem] md:text-[7rem] leading-[0.9] tracking-tight font-light text-[#08111d] mb-8">
+          <h1 className="text-[5.5rem] md:text-[8rem] xl:text-[9rem] leading-[0.88] tracking-[-0.04em] font-light text-[#111111] max-w-4xl">
             Figure Out
             <br />
             Your Team
           </h1>
 
-          <div className="w-32 h-[2px] bg-[#b8862f] mb-10" />
+          <div className="w-24 h-[2px] bg-[#8f6a2a] mt-12 mb-12" />
 
-          <h2 className="text-4xl md:text-5xl leading-tight text-[#b8862f] font-light max-w-2xl mb-10">
+          <p className="text-3xl md:text-5xl leading-[1.08] font-light text-[#7a5d2f] max-w-3xl mb-12">
             And Build a Culture That Drives Performance
-          </h2>
-
-          <p className="text-xl leading-9 text-black/70 max-w-2xl mb-12">
-            Trevor Throness helps leaders understand people, improve communication, and get the right people in the right seats—so teams perform at their best.
           </p>
 
-          <div className="flex flex-col items-start gap-8">
-            <a href="#cta" className="bg-[#08111d] text-white px-10 py-6 text-lg font-semibold uppercase tracking-wide">
-              Get The DISC Assessment →
+          <p className="text-xl leading-9 text-black/65 max-w-2xl mb-14">
+            Trevor Throness helps leaders understand people, improve communication, and put the right people in the right seats—so teams become healthier, more aligned, and more effective.
+          </p>
+
+          <div className="flex flex-wrap gap-8 items-center">
+            <a
+              href="#cta"
+              className="bg-[#111827] text-white px-10 py-6 text-sm uppercase tracking-[0.15em] font-semibold hover:opacity-90 transition"
+            >
+              Take The DISC Assessment →
             </a>
 
-            <div className="flex items-center gap-3 text-black/60 text-lg">
-              <span className="text-[#b8862f]">◌</span>
-              Trusted by thousands of leaders and organizations worldwide
+            <div className="text-black/50 text-lg">
+              Trusted by leaders, teams, and organizations across industries.
             </div>
           </div>
         </div>
 
-        <div className="relative bg-[#08111d] overflow-hidden min-h-[700px]">
+        <div className="relative min-h-[850px] bg-[#111827] overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/50 z-10" />
+
           <img
             src="/trevor-hero.svg"
             alt="Trevor Throness"
-            className="absolute inset-0 w-full h-full object-cover opacity-95"
+            className="absolute inset-0 w-full h-full object-cover scale-[1.03] opacity-95"
           />
 
-          <div className="absolute bottom-10 left-10 bg-[#f4f0e8] p-8 shadow-2xl max-w-md border border-black/10">
-            <div className="w-1 h-16 bg-[#b8862f] absolute left-0 top-8" />
-
-            <div className="pl-6">
-              <p className="text-3xl tracking-wide font-semibold text-[#08111d] mb-4">
-                TREVOR THRONESS
-              </p>
-
-              <p className="text-xl leading-9 text-black/70">
-                Speaker. Author. DISC Expert.
-                <br />
-                Helping leaders build high-performing teams.
-              </p>
+          <div className="absolute bottom-16 left-[-40px] z-20 bg-[#f3efe7] p-10 shadow-2xl border border-black/10 max-w-lg">
+            <div className="uppercase tracking-[0.35em] text-[#8f6a2a] text-xs font-bold mb-6">
+              Trevor Throness
             </div>
+
+            <p className="text-3xl leading-tight font-light text-[#111111] mb-6">
+              Speaker. Author.
+              <br />
+              DISC Expert.
+            </p>
+
+            <p className="text-lg leading-8 text-black/65">
+              Helping leaders build stronger communication, healthier cultures, and high-performing teams through behavioural science.
+            </p>
           </div>
         </div>
       </section>
 
-      <section className="bg-[#08111d] text-white py-24">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20">
+      <section className="bg-[#111827] text-white py-28">
+        <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-24">
           <div>
-            <p className="uppercase tracking-[0.3em] text-[#b8862f] text-sm font-bold mb-6">
+            <p className="uppercase tracking-[0.35em] text-[#b99658] text-xs font-bold mb-8">
               The Problem
             </p>
 
-            <h2 className="text-5xl md:text-6xl leading-tight font-light mb-8">
+            <h2 className="text-5xl md:text-7xl leading-[1] tracking-tight font-light mb-10 max-w-3xl">
               Most business problems are actually people problems.
             </h2>
 
-            <p className="text-xl leading-9 text-white/70">
-              Miscommunication. Conflict. Turnover. Missed expectations. Most leaders do not have a strategy problem. They have a people problem.
+            <p className="text-2xl leading-10 text-white/65 max-w-2xl">
+              Miscommunication. Conflict. Turnover. Lack of accountability. Most leaders do not have a strategy problem. They have a people problem.
             </p>
           </div>
 
@@ -104,39 +111,41 @@ export default function Home() {
               ['Build Stronger Teams', 'Create alignment and healthier communication.'],
               ['Lead With Confidence', 'Understand how people naturally think and respond.'],
               ['Fix Chronic Problems', 'Solve recurring people issues at the root.'],
-              ['Get Better Results', 'Stronger culture. Better decisions. More growth.'],
+              ['Get Better Results', 'Build healthier cultures and stronger performance.'],
             ].map(([title, desc]) => (
-              <div key={title} className="border border-white/10 rounded-3xl p-8 bg-white/5">
-                <h3 className="text-2xl font-semibold mb-4">{title}</h3>
-                <p className="text-white/70 leading-8">{desc}</p>
+              <div key={title} className="border border-white/10 bg-white/[0.03] p-10">
+                <h3 className="text-2xl font-light mb-5">{title}</h3>
+                <p className="text-white/60 leading-8 text-lg">{desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="book" className="py-24 bg-[#f4f0e8]">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
+      <section id="book" className="py-28 bg-[#f3efe7]">
+        <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-24 items-center">
           <div>
-            <p className="uppercase tracking-[0.3em] text-[#8a6a2f] text-sm font-bold mb-6">
+            <p className="uppercase tracking-[0.35em] text-[#8f6a2a] text-xs font-bold mb-8">
               Featured Book
             </p>
 
-            <h2 className="text-5xl md:text-6xl leading-tight font-light mb-8">
+            <h2 className="text-5xl md:text-7xl leading-[1] tracking-tight font-light mb-10">
               Figure Out Your Team.
             </h2>
 
-            <p className="text-xl leading-9 text-black/70 mb-8">
-              Practical behavioural science for leaders who want healthier teams, stronger communication, and better results.
+            <p className="text-2xl leading-10 text-black/65 mb-10 max-w-2xl">
+              Practical behavioural science for leaders who want healthier teams, stronger communication, and better performance.
             </p>
           </div>
 
           <div className="grid grid-cols-3 gap-6">
             {['Power of People Skills', 'Figure Out Your Team', 'DISC Leadership'].map((book) => (
-              <div key={book} className="aspect-[2/3] rounded-2xl bg-[#122033] text-white p-5 flex items-end shadow-2xl">
+              <div key={book} className="aspect-[2/3] bg-[#111827] text-white p-6 flex items-end shadow-2xl">
                 <div>
-                  <p className="text-xs uppercase tracking-[0.2em] text-[#b8862f] mb-3">Trevor Throness</p>
-                  <h3 className="text-2xl leading-tight font-bold">{book}</h3>
+                  <p className="uppercase tracking-[0.3em] text-[10px] text-[#b99658] mb-4">
+                    Trevor Throness
+                  </p>
+                  <h3 className="text-2xl leading-tight font-light">{book}</h3>
                 </div>
               </div>
             ))}
