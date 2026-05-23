@@ -1,11 +1,13 @@
 export default function Home() {
   return (
-    <main className="bg-[#f6f1e8] text-[#1d1d1d] min-h-screen">
-      <nav className="border-b border-black/10 bg-[#f6f1e8]">
-        <div className="max-w-7xl mx-auto px-8 py-6 flex items-center justify-between">
+    <main className="bg-white text-[#1d1d1d] min-h-screen">
+      <nav className="border-b border-black/10 bg-white">
+        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
           <div>
-            <div className="text-xl font-semibold tracking-tight">Trevor Throness</div>
-            <div className="text-[10px] uppercase tracking-[0.3em] text-[#8a6a3b] mt-1">
+            <div className="text-xl font-semibold tracking-tight text-[#182433]">
+              Trevor Throness
+            </div>
+            <div className="text-[10px] uppercase tracking-[0.28em] text-[#9a7a48] mt-1">
               Figure Out Your Team
             </div>
           </div>
@@ -17,19 +19,22 @@ export default function Home() {
             <a href="#resources">Resources</a>
           </div>
 
-          <a href="#cta" className="bg-[#182433] text-white px-5 py-3 text-sm font-medium">
+          <a
+            href="#cta"
+            className="bg-[#182433] text-white px-5 py-3 text-sm font-medium rounded-sm"
+          >
             Take DISC Assessment
           </a>
         </div>
       </nav>
 
-      <section className="max-w-7xl mx-auto px-8 py-20 lg:py-28 grid lg:grid-cols-2 gap-16 items-center">
+      <section className="max-w-7xl mx-auto px-6 py-16 lg:py-24 grid lg:grid-cols-[1fr_520px] gap-16 items-center">
         <div>
-          <p className="uppercase tracking-[0.35em] text-[#8a6a3b] text-xs font-semibold mb-8">
-            Get The Clarity Every Leader Needs To
+          <p className="uppercase tracking-[0.32em] text-[#9a7a48] text-xs font-semibold mb-8">
+            GET THE CLARITY EVERY LEADER NEEDS TO
           </p>
 
-          <h1 className="text-5xl md:text-7xl leading-[0.95] tracking-tight font-light text-[#182433] mb-8">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl leading-[0.95] tracking-tight font-light text-[#182433] mb-8 max-w-3xl">
             Figure Out
             <br />
             Your Team
@@ -43,51 +48,44 @@ export default function Home() {
             Trevor Throness helps leaders improve communication, strengthen culture, and put the right people in the right seats through practical behavioural science.
           </p>
 
-          <a href="#cta" className="inline-flex bg-[#182433] text-white px-7 py-4 text-sm font-medium">
-            Take The DISC Assessment
-          </a>
+          <div className="flex flex-wrap gap-5 items-center">
+            <a
+              href="#cta"
+              className="inline-flex bg-[#182433] text-white px-7 py-4 text-sm font-medium rounded-sm"
+            >
+              Take The DISC Assessment
+            </a>
+
+            <span className="text-black/45 text-sm">
+              Trusted by leaders and teams across industries.
+            </span>
+          </div>
         </div>
 
         <div className="relative">
-          <div className="aspect-[4/5] overflow-hidden bg-[#d9d3c7]">
+          <div className="overflow-hidden rounded-sm bg-[#e9e2d7] border border-black/5">
             <img
               src="/trevor-hero.svg"
               alt="Trevor Throness"
               className="w-full h-full object-cover grayscale"
             />
           </div>
-
-          <div className="absolute -bottom-6 -left-6 bg-white p-6 shadow-xl max-w-sm border border-black/5">
-            <div className="text-xs uppercase tracking-[0.3em] text-[#8a6a3b] mb-4">
-              Trevor Throness
-            </div>
-
-            <p className="text-2xl leading-tight font-light text-[#182433] mb-4">
-              Speaker. Author.
-              <br />
-              DISC Expert.
-            </p>
-
-            <p className="text-base leading-7 text-black/60">
-              Helping leaders build healthier teams and stronger communication.
-            </p>
-          </div>
         </div>
       </section>
 
-      <section className="bg-[#182433] text-white py-24">
-        <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-20">
+      <section className="bg-[#182433] text-white py-20">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-start">
           <div>
-            <p className="uppercase tracking-[0.35em] text-[#c3a46b] text-xs font-semibold mb-6">
+            <p className="uppercase tracking-[0.32em] text-[#c7ab78] text-xs font-semibold mb-6">
               The Problem
             </p>
 
-            <h2 className="text-4xl md:text-6xl leading-tight font-light mb-8">
+            <h2 className="text-4xl md:text-5xl leading-tight font-light mb-8 max-w-2xl">
               Most business problems are actually people problems.
             </h2>
 
             <p className="text-xl leading-9 text-white/65 max-w-xl">
-              Miscommunication, conflict, and lack of accountability quietly damage performance and culture.
+              Miscommunication, conflict, and lack of accountability quietly damage performance, morale, and culture.
             </p>
           </div>
 
@@ -98,7 +96,10 @@ export default function Home() {
               'Reduce recurring conflict',
               'Create healthier culture',
             ].map((item) => (
-              <div key={item} className="border border-white/10 p-8 text-xl font-light text-white/90 bg-white/[0.02]">
+              <div
+                key={item}
+                className="border border-white/10 p-7 text-lg font-light text-white/90 bg-white/[0.03]"
+              >
                 {item}
               </div>
             ))}
