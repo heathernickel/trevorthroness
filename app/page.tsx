@@ -73,37 +73,53 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#182433] text-white py-20">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-start">
-          <div>
-            <p className="uppercase tracking-[0.32em] text-[#c7ab78] text-xs font-semibold mb-6">
-              The Problem
-            </p>
+      <section className="bg-[#f6f1e8] border-t border-black/10 border-b border-black/10">
+        <div className="max-w-7xl mx-auto px-6 py-14">
+          <p className="uppercase tracking-[0.32em] text-[#8a6a3b] text-xs text-center font-semibold mb-10">
+            Trusted By Leaders & Organizations
+          </p>
 
-            <h2 className="text-4xl md:text-5xl leading-tight font-light mb-8 max-w-2xl">
-              Most business problems are actually people problems.
-            </h2>
-
-            <p className="text-xl leading-9 text-white/65 max-w-xl">
-              Miscommunication, conflict, and lack of accountability quietly damage performance, morale, and culture.
-            </p>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-10 items-center opacity-60 text-center text-xl text-[#182433] mb-14">
+            <div>Google</div>
+            <div>Best Buy</div>
+            <div>Citi</div>
+            <div>Deloitte</div>
+            <div>+ Hundreds More</div>
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-5">
+          <div className="grid md:grid-cols-4 border border-black/10">
             {[
-              'Build stronger teams',
-              'Improve communication',
-              'Reduce recurring conflict',
-              'Create healthier culture',
-            ].map((item) => (
-              <div
-                key={item}
-                className="border border-white/10 p-7 text-lg font-light text-white/90 bg-white/[0.03]"
-              >
-                {item}
+              ['20+', 'years coaching leaders and teams'],
+              ['12,000+', 'leaders and learners impacted'],
+              ['3', '#1 bestselling leadership books'],
+              ['DISC', 'tools used by teams across industries'],
+            ].map(([number, text]) => (
+              <div key={number} className="border-r last:border-r-0 border-black/10 p-8 bg-white/40">
+                <div className="text-5xl font-light text-[#182433] mb-3">
+                  {number}
+                </div>
+                <div className="text-black/65 leading-7 text-base max-w-xs">
+                  {text}
+                </div>
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="bg-[#f6f1e8] py-24">
+        <div className="max-w-7xl mx-auto px-6">
+          <p className="uppercase tracking-[0.32em] text-[#8a6a3b] text-xs font-semibold mb-8">
+            The Pattern
+          </p>
+
+          <h2 className="text-5xl md:text-7xl leading-[1] tracking-tight font-light text-[#182433] max-w-5xl mb-10">
+            Your business is growing. But communication breakdowns, people problems, and leadership friction are slowing everything down.
+          </h2>
+
+          <p className="text-xl leading-10 text-black/65 max-w-3xl">
+            Most teams do not struggle because people are unwilling. They struggle because leaders lack the tools to understand behaviour, communicate clearly, and create alignment.
+          </p>
         </div>
       </section>
     </main>
