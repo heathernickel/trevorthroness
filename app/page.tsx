@@ -73,13 +73,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#f6f1e8] border-t border-black/10 border-b border-black/10">
+      <section className="bg-[#f5f1e8] border-t border-b border-[#d7cec1]">
         <div className="max-w-7xl mx-auto px-6 py-16">
-          <p className="uppercase tracking-[0.32em] text-[#8a6a3b] text-xs text-center font-semibold mb-12">
-            Trusted By Leaders & Organizations
+          <p className="uppercase tracking-[0.32em] text-[#9a7a48] text-xs text-center font-semibold mb-12">
+            Trusted By Leaders & Organizations Worldwide
           </p>
 
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-12 items-center opacity-50 text-center text-2xl text-[#182433] mb-16 font-light">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-12 items-center opacity-45 text-center text-[1.7rem] text-[#182433] mb-16 font-light">
             <div>Google</div>
             <div>Best Buy</div>
             <div>Citi</div>
@@ -87,18 +87,24 @@ export default function Home() {
             <div>+ Hundreds More</div>
           </div>
 
-          <div className="grid md:grid-cols-4 border border-black/10 bg-white/50">
+          <div className="grid md:grid-cols-4 border-t border-b border-[#cec4b5]">
             {[
-              ['30+', 'years coaching leaders and teams'],
-              ['12,000+', 'leaders and learners impacted'],
-              ['2', 'bestselling leadership books'],
-              ['150,000', 'DISC assessments applied across industries'],
+              ['30+', 'YEARS COACHING\nLEADERS AND TEAMS'],
+              ['12,000+', 'LEADERS AND\nLEARNERS IMPACTED'],
+              ['2', 'BESTSELLING\nLEADERSHIP BOOKS'],
+              ['150,000+', 'DISC ASSESSMENTS\nAPPLIED ACROSS INDUSTRIES'],
             ].map(([number, text]) => (
-              <div key={number} className="border-r last:border-r-0 border-black/10 p-10">
-                <div className="text-[4.25rem] leading-none tracking-tight font-light text-[#182433] mb-5">
+              <div
+                key={number}
+                className="border-r last:border-r-0 border-[#cec4b5] px-8 py-10 flex flex-col items-center text-center"
+              >
+                <div className="text-[#182433] text-[5.8rem] leading-none tracking-[-0.07em] font-light mb-4">
                   {number}
                 </div>
-                <div className="text-black/60 leading-7 text-[0.95rem] max-w-xs">
+
+                <div className="w-10 h-[2px] bg-[#b49358] mb-5" />
+
+                <div className="text-[0.95rem] leading-8 tracking-[0.14em] text-black/70 whitespace-pre-line uppercase">
                   {text}
                 </div>
               </div>
@@ -107,9 +113,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#f6f1e8] py-28">
+      <section className="bg-[#f5f1e8] py-28">
         <div className="max-w-7xl mx-auto px-6">
-          <p className="uppercase tracking-[0.32em] text-[#8a6a3b] text-xs font-semibold mb-8">
+          <p className="uppercase tracking-[0.32em] text-[#9a7a48] text-xs font-semibold mb-8">
             The Pattern
           </p>
 
