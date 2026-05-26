@@ -89,22 +89,30 @@ export default function Home() {
 
           <div className="grid md:grid-cols-4 border-t border-b border-[#cec4b5]">
             {[
-              ['30+', 'YEARS COACHING\nLEADERS AND TEAMS'],
-              ['12,000+', 'LEADERS AND\nLEARNERS IMPACTED'],
-              ['2', 'BESTSELLING\nLEADERSHIP BOOKS'],
-              ['150,000+', 'DISC ASSESSMENTS\nAPPLIED ACROSS INDUSTRIES'],
-            ].map(([number, text]) => (
+              ['30', '+', 'YEARS COACHING\nLEADERS AND TEAMS'],
+              ['12,000', '+', 'LEADERS AND\nLEARNERS IMPACTED'],
+              ['2', '', 'BESTSELLING\nLEADERSHIP BOOKS'],
+              ['150,000', '+', 'DISC ASSESSMENTS\nAPPLIED ACROSS INDUSTRIES'],
+            ].map(([number, suffix, text]) => (
               <div
                 key={number}
                 className="border-r last:border-r-0 border-[#cec4b5] px-8 py-10 flex flex-col items-center text-center"
               >
-                <div className="text-[#182433] text-[5.8rem] leading-none tracking-[-0.07em] font-light mb-4">
-                  {number}
+                <div className="flex items-start text-[#182433] mb-4 leading-none">
+                  <span className="text-[5.1rem] tracking-[-0.08em] font-light leading-none">
+                    {number}
+                  </span>
+
+                  {suffix && (
+                    <span className="text-[2rem] leading-none mt-2 ml-1 font-light">
+                      {suffix}
+                    </span>
+                  )}
                 </div>
 
                 <div className="w-10 h-[2px] bg-[#b49358] mb-5" />
 
-                <div className="text-[0.95rem] leading-8 tracking-[0.14em] text-black/70 whitespace-pre-line uppercase">
+                <div className="text-[0.82rem] leading-7 tracking-[0.18em] text-black/70 whitespace-pre-line uppercase">
                   {text}
                 </div>
               </div>
